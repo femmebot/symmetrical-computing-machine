@@ -5,46 +5,73 @@
   <title>Accordion</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="scripts/main.js"></script>
 </head>
 
 <body>
 
   <div class="accordion-container">
     <section>
-      <input class="option-input" checked id="option-1" type="radio" name="options" />
-      <label class="option" for="option-1">
-        <span class="option__label">
-          Video tutorial
-        </span>
-      </label>
-      <p>
+      <h1>
+        <input class="option-input" checked id="option-1" type="radio" name="options" />
+        <label class="option" for="option-1">
+          <span class="option__label">
+            Video tutorial
+          </span>
+          <span>
+            Get an introduction to basic cloud.gov concepts and learn how to run applications in your sandbox.
+          </span>
+        </label>
+      </h1>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet.
+        </p>
+      </article>
 
-      </p>
     </section>
 
     <section>
-      <input class="option-input" id="option-2" type="radio" name="options" />
-      <label class="option" for="option-2">
-        <span class="option__label">
-          Java app
-        </span>
-      </label>
-      <p>
-        Learn how to deploy a Java web application in your sandbox.
-      </p>
+      <h1>
+        <input class="option-input" id="option-2" type="radio" name="options" />
+          <label class="option" for="option-2">
+            <span class="option__label">
+              Java app
+            </span>
+            <span>
+              Learn how to deploy a Java web application in your sandbox.
+            </span>
+          </label>
+      </h1>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet. The difference between .css( "height" ) and .height() is that the latter returns a unit-less pixel value (for example, 400) while the former returns a value with units intact (for example, 400px). The .height() method is recommended when an element's height needs to be used in a mathematical calculation.
+        </p>
+
+      </article>
+
     </section>
 
     <section>
-      <input class="option-input" id="option-3" type="radio" name="options" />
-      <label class="option" for="option-3">
-        <span class="option__label">
-          Hello World
-        </span>
-      </label>
-      <p>
-        Read through the documentation for deploying a simple “Hello World” app in a number of languages and frameworks.
-      </p>
+      <h1>
+        <input class="option-input" id="option-3" type="radio" name="options" />
+        <label class="option" for="option-3">
+          <span class="option__label">
+            Hello World
+          </span>
+          <span>
+            Read through the documentation for deploying a simple “Hello World” app in a number of languages and frameworks.
+          </span>
+        </label>
+      </h1>
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet.
+        </p>
+      </article>
     </section>
 
   </div>

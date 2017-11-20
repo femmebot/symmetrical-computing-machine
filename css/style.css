@@ -3,9 +3,7 @@ html {
   background: linear-gradient(to bottom, #4678F3, #64D6EE);*/
   margin: 0;
   padding: 0;
-  background-color: #f00;
-}
-html {
+  background-color: #f1f1f1;
   font-size: 62.5%;
   height: 100%;
   /*display: -webkit-box;
@@ -17,7 +15,34 @@ body {
   margin: 0;
   padding: 0;
 }
-
+section {
+  padding: 10px;
+  background-color: #d3d9df;
+  min-height: 500px;
+  height: auto;
+  overflow: hidden;
+  border-right: 1px solid #fff;
+}
+section:last-of-type {
+  border-right: none;
+}
+h1 {
+  min-height: 180px;
+  border-bottom: 1px solid #ccc;
+}
+h1 span {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 400px;
+  margin-bottom: 15px;
+  color: #333;
+}
+h1 span.option__label {
+  font-size: 20px;
+  line-height: 1.2;
+}
 .accordion-container {
   margin: 0 auto;
   width: 960px;
@@ -36,13 +61,13 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   display: block;
-  padding: 0.5em 0;
-  background: #FFF;
+  padding: 0 10px 0 0;
+  /*background: #f1f1f1;*/
   font-size: 2rem;
   line-height: 1.2;
   position: relative;
   /*margin: 0.1em;*/
-  width: 169px;
+  width: 139px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,13 +82,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   cursor: pointer;
-  opacity: 0.25;
-  -webkit-transition-duration: 0.4s, 0.8s;
-          transition-duration: 0.4s, 0.8s;
-  -webkit-transition-property: width, opacity, -webkit-box-flex;
-  transition-property: width, opacity, -webkit-box-flex;
-  transition-property: width, opacity;
-  transition-property: width, opacity, -webkit-box-flex, -ms-flex-positive;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-property: width, -webkit-box-flex;
+  transition-property: width, -webkit-box-flex;
+  transition-property: width;
+  transition-property: width, -webkit-box-flex, -ms-flex-positive;
   /*-webkit-transition-timing-function: cubic-bezier(0.98, 0, 0.22, 0.98), ease-in-out;
           transition-timing-function: cubic-bezier(0.98, 0, 0.22, 0.98), ease-in-out;*/
 }
@@ -93,11 +117,8 @@ body {
   -webkit-box-flex: 8;
       -ms-flex-positive: 8;
           flex-grow: 8;
-  opacity: 1;
   width: 670px;
 }
-
-/*.option-input:checked + .option + p {
-  visibility: visible;
-  opacity: 1;
-}*/
+article {
+  max-width: 650px;
+}
