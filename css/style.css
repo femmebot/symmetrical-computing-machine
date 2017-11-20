@@ -30,6 +30,10 @@ h1 {
   min-height: 180px;
   border-bottom: 1px solid #ccc;
 }
+h1 label {
+  min-height: 180px;
+  /*display: block;*/
+}
 h1 span {
   font-family: "Libre Franklin", sans-serif;
   font-size: 12px;
@@ -38,6 +42,7 @@ h1 span {
   max-width: 400px;
   margin-bottom: 15px;
   color: #333;
+  display: block;
 }
 h1 span.option__label {
   font-size: 20px;
@@ -45,7 +50,7 @@ h1 span.option__label {
 }
 .accordion-container {
   margin: 0 auto;
-  width: 960px;
+  width: 1010px;
   display: flex;
 }
 /*.accordion-container section p {
@@ -68,7 +73,7 @@ h1 span.option__label {
   position: relative;
   /*margin: 0.1em;*/
   width: 139px;
-  display: -webkit-box;
+  /*display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
@@ -80,7 +85,7 @@ h1 span.option__label {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
+          flex-direction: column;*/
   cursor: pointer;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
@@ -88,8 +93,8 @@ h1 span.option__label {
   transition-property: width, -webkit-box-flex;
   transition-property: width;
   transition-property: width, -webkit-box-flex, -ms-flex-positive;
-  /*-webkit-transition-timing-function: cubic-bezier(0.98, 0, 0.22, 0.98), ease-in-out;
-          transition-timing-function: cubic-bezier(0.98, 0, 0.22, 0.98), ease-in-out;*/
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 /*.option:before,
 .option:after {
@@ -120,5 +125,5 @@ h1 span.option__label {
   width: 670px;
 }
 article {
-  max-width: 650px;
+  max-width: 640px;
 }
